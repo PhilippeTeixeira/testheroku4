@@ -6,10 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "front": "node index.js",
-    "back": "cd back && node server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run back\" \"npm run front\"",
-    "start": "cd back && node server.js && cd .. && node index.js"
+    "start": "node index.js /back/server.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
