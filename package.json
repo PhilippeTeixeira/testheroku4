@@ -9,7 +9,7 @@
     "front": "node index.js",
     "back": "cd back && node server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run back\" \"npm run front\"",
-    "start": "node index.js"
+    "start": "cd back && node server.js && cd .. && node index.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
