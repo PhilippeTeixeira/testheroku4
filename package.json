@@ -9,7 +9,7 @@
     "front": "node index.js",
     "back": "cd back && node server.js",
     "dev": "concurrently --kill-others-on-fail \"npm run back\" \"npm run front\"",
-    "heroku-postbuild": "npm install && npm run build"
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
